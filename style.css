@@ -1,22 +1,88 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root{
+    --purple: #DBBEDE;
+}
+
 body{
-    background-color: #000;
+    background-color: var(--purple);
     font-weight: 800;
     font-size:40px;
+    margin: 0;
+
+    font-family: 'Press Start 2P';
+    font-size: 14px;
 }
 
-h1{
-    color: #fff;
-
-
-}
 
 h1{
+    
     mix-blend-mode: difference;
     position: fixed;
-    top: 100px;
-    left: 100px;
+    text-align: center;
+
+    font-size: 30px;
+
+    top: 20px;
+    left: 20px;
+
+
+
+    color: #fff;
+    z-index: 20000;
 }
 
 canvas{
     vertical-align: bottom;
 }
+
+button.clear{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    background-color: #000;
+    padding: 15px 30px;
+    text-align: center;
+
+    color:  #fff;
+
+
+    outline: none;
+    border:none;
+
+    font-family: 'Press Start 2P';
+
+    cursor: pointer;
+    
+    transition: all 0.3s ease-in-out;
+}
+
+p{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+
+    color: #fff;
+
+    font-size: 12px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 5px;
+
+    border-bottom: 2px solid #fff; 
+}
+
+
+
+button.clear:hover{
+    background-color: #fff;
+    color: #000;
+
+    transform: translateY(-5px);
+}
+

@@ -25,10 +25,11 @@ const images = [
   "png/spicegals.png",
   "png/avatar.png",
   "png/danny.png",
+  //"png/scholastic.png",
   "png/drakenjosh.jpg",
   "png/fairlyoddparents.png",
   "png/kimpossible.png",
-  "png/ron.png",
+  "png/jimmy_neutron.png",
   "png/spongebob.png",
   "png/timmy.png",
 ].map((src) => {
@@ -83,6 +84,10 @@ const draw = () => {
     //run draw on every frame
     requestAnimationFrame(draw)
 }
-
-
 draw()
+
+//clear out canvas on button click 
+
+document.querySelector("button").onclick = () => {
+    context.clearRect(0, 0, canvas.width, canvas.height);
+}
