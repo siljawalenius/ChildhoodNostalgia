@@ -1,0 +1,22 @@
+body{
+    background-color: #000;
+    font-weight: 800;
+    font-size:40px;
+}
+
+h1{
+    color: #fff;
+
+
+}
+
+h1{
+    mix-blend-mode: difference;
+    position: fixed;
+    top: 100px;
+    left: 100px;
+}
+
+canvas{
+    vertical-align: bottom;
+}
